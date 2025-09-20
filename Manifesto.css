@@ -1,0 +1,137 @@
+.manifesto {
+    width: 100%;
+}
+
+.manifesto-hero {
+    background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.95)), url('/tinubu2.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.manifesto-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.manifesto-subtitle {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.manifesto-content {
+    padding: 5rem 2rem;
+    background: #f8f9fa;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #003366;
+    padding: 2rem;
+}
+
+.manifesto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.manifesto-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.manifesto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(0, 51, 102, 0.1);
+    z-index: 0;
+}
+
+.manifesto-card h3 {
+    color: #003366;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.manifesto-card p {
+    position: relative;
+    z-index: 1;
+    line-height: 1.6;
+}
+
+.call-to-action {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #0066cc 0%, #003366 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    background: #ffcc00;
+    color: #003366;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background: #ffd84d;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .manifesto-hero h1 {
+        font-size: 2rem;
+    }
+
+    .manifesto-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .manifesto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-number {
+        font-size: 3rem;
+    }
+}
